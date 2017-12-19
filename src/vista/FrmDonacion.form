@@ -65,6 +65,15 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="btnIngresarD" min="-2" pref="125" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="btnModificarD" min="-2" pref="125" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="btnEliminarD" min="-2" pref="125" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="labNombre" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
@@ -75,62 +84,59 @@
                               <Component id="displayFechaN" min="-2" pref="100" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="labBuscarRut" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="txtBuscarRut" min="-2" pref="84" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Component id="btnBuscarRut" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="labCiudad" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
-                              <Component id="displayTipoS" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                              <Component id="labApellido" alignment="0" min="-2" pref="65" max="-2" attributes="0"/>
-                              <Component id="displayApellido" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                              <Component id="labTipoS" min="-2" pref="91" max="-2" attributes="0"/>
-                              <Component id="displayCiudad" min="-2" pref="100" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="270" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="labCodDonacion" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="labFechaD" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
-                                      <Component id="labCentro" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
-                                      <Component id="cboxCentro" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
-                                      <Component id="txtFechaD" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
-                                      <Component id="txtCodDonacion" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="labApellido" min="-2" pref="65" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="labCodDonacion" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="txtFechaD" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                                              <Component id="labBuscarRut" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtBuscarRut" alignment="0" min="-2" pref="104" max="-2" attributes="0"/>
+                                              <Component id="txtCodDonacion" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="labCiudad" min="-2" pref="65" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                          <Component id="labFechaD" min="-2" pref="90" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="displayApellido" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Component id="labTipoS" min="-2" pref="91" max="-2" attributes="0"/>
+                                      <Component id="displayCiudad" min="-2" pref="100" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="displayTipoS" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btnBuscarCodigoD" alignment="1" min="-2" pref="90" max="-2" attributes="0"/>
-                                          <Component id="txtCodPaciente" alignment="1" min="-2" pref="90" max="-2" attributes="0"/>
-                                          <Component id="cboxTipoDonacion" alignment="1" min="-2" pref="90" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                          <Component id="labCodPaciente" alignment="1" min="-2" pref="105" max="-2" attributes="0"/>
-                                          <Component id="labTipoD" min="-2" pref="105" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="labCentro" min="-2" pref="90" max="-2" attributes="0"/>
+                                      <Component id="cboxCentro" min="-2" pref="104" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="btnIngresarD" min="-2" pref="125" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnModificarD" min="-2" pref="125" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnEliminarD" min="-2" pref="125" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                  <Component id="btnLimpiar" min="-2" pref="125" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="btnLimpiar" min="-2" pref="125" max="-2" attributes="0"/>
+                      <Component id="cboxTipoDonacion" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="txtCodPaciente" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="labCodPaciente" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                      <Component id="labTipoD" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                      <Component id="btnBuscarRut" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="btnBuscarCodigoD" min="-2" pref="90" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -138,78 +144,85 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                          <Component id="labNombre" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="displayApellido" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="displayNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtCodDonacion" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="labCodDonacion" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="labTipoS" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="labSexo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labBuscarRut" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labApellido" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="displayTipoS" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="displaySexo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="displayApellido" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="displayNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtBuscarRut" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="labTipoS" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labSexo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labCentro" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="displayTipoS" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="displaySexo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cboxCentro" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="labCiudad" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labFechaN" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labFechaD" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="displayCiudad" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="displayFechaN" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="txtFechaD" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="labBuscarRut" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtBuscarRut" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="btnBuscarRut" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="labApellido" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="labCiudad" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="labFechaN" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="displayCiudad" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="displayFechaN" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="labCodDonacion" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="txtCodDonacion" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                  <Component id="labCentro" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Component id="cboxCentro" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Component id="labFechaD" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtFechaD" min="-2" pref="25" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="btnBuscarCodigoD" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="btnBuscarCodigoD" min="-2" pref="25" max="-2" attributes="0"/>
+                          <EmptySpace min="47" pref="47" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="btnBuscarRut" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                   <Component id="labTipoD" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="cboxTipoDonacion" min="-2" pref="25" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Component id="labCodPaciente" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtCodPaciente" min="-2" pref="25" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="labCodPaciente" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="33" pref="33" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="txtCodPaciente" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="36" max="32767" attributes="0"/>
+                  <EmptySpace pref="50" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnIngresarD" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                       <Component id="btnModificarD" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
@@ -418,9 +431,9 @@
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="3">
-                <StringItem index="0" value="1"/>
-                <StringItem index="1" value="2"/>
-                <StringItem index="2" value="3"/>
+                <StringItem index="0" value="CONCEPCION"/>
+                <StringItem index="1" value="TALCAHUANO"/>
+                <StringItem index="2" value="CHIGUAYANTE"/>
               </StringArray>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">

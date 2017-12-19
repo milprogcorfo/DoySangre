@@ -166,7 +166,7 @@ public class FrmDonante extends javax.swing.JFrame {
                         .addComponent(btnEliminar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnLimpiar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                         .addComponent(jLabel6)
                         .addGap(6, 6, 6)
                         .addComponent(txtBuscarRut, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -229,7 +229,7 @@ public class FrmDonante extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Listado de Donantes"));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Fichas de Inscripcion"));
 
         tblDonante.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -249,7 +249,7 @@ public class FrmDonante extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tblDonante);
 
-        btnListar.setText("Listar");
+        btnListar.setText("Listar datos");
         btnListar.setActionCommand("CMD_LIST");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -259,8 +259,8 @@ public class FrmDonante extends javax.swing.JFrame {
             .addComponent(jScrollPane1)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnListar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(btnListar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(489, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

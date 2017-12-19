@@ -111,7 +111,7 @@
                           <Component id="btnEliminar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="btnLimpiar" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="55" max="32767" attributes="0"/>
+                          <EmptySpace pref="58" max="32767" attributes="0"/>
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                           <Component id="txtBuscarRut" min="-2" pref="88" max="-2" attributes="0"/>
@@ -380,7 +380,7 @@
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Listado de Donantes"/>
+            <TitledBorder title="Fichas de Inscripcion"/>
           </Border>
         </Property>
       </Properties>
@@ -391,8 +391,8 @@
               <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnListar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="btnListar" min="-2" pref="102" max="-2" attributes="0"/>
+                  <EmptySpace pref="489" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -439,7 +439,7 @@
         </Container>
         <Component class="javax.swing.JButton" name="btnListar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Listar"/>
+            <Property name="text" type="java.lang.String" value="Listar datos"/>
             <Property name="actionCommand" type="java.lang.String" value="CMD_LIST"/>
           </Properties>
           <AuxValues>

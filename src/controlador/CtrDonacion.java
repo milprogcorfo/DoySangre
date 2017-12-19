@@ -87,7 +87,7 @@ public class CtrDonacion implements ActionListener, WindowListener {
                     vDonacion.txtFechaD.setText(aux1.getFechaD());
                     vDonacion.txtCodPaciente.setText("" + aux1.getCodigoP());
                     if (aux1.getTipoD().equals("ALTRUISTA")) { d = 0; }
-                    if (aux1.getTipoD().equals("REPOSICION")) { d = 1; }
+                    if (aux1.getTipoD().equals("REPOSICIÓN")) { d = 1; }
                     vDonacion.cboxTipoDonacion.setSelectedIndex(d);
                     vDonacion.displayNombre.setText(aux2.getNombre());
                     vDonacion.displayApellido.setText(aux2.getApellido());
@@ -121,7 +121,14 @@ public class CtrDonacion implements ActionListener, WindowListener {
                 }
                 
                 aux1.setRutD(aux2.getRut());
-                aux1.setCodigoC(Integer.parseInt(vDonacion.cboxCentro.getSelectedItem().toString()));
+            
+                int auxCC1 = 0;
+                if(vDonacion.cboxCentro.getSelectedIndex() == 0){auxCC1 = 1;}
+                if(vDonacion.cboxCentro.getSelectedIndex() == 1){auxCC1 = 2;}
+                if(vDonacion.cboxCentro.getSelectedIndex() == 2){auxCC1 = 3;} 
+                
+                aux1.setCodigoC(auxCC1);
+                //aux1.setCodigoC(Integer.parseInt(vDonacion.cboxCentro.getSelectedItem().toString()));
                 
                 if(aux1.getCodigoP() == -1){
                     mbdDonacion.agregar(aux1);
@@ -149,7 +156,13 @@ public class CtrDonacion implements ActionListener, WindowListener {
                     aux1.setCodigoP(Integer.parseInt(vDonacion.txtCodPaciente.getText()));
                 }
                 
-                aux1.setCodigoC(Integer.parseInt(vDonacion.cboxCentro.getSelectedItem().toString()));
+                int auxCC2 = 0;
+                if(vDonacion.cboxCentro.getSelectedIndex() == 0){auxCC2 = 1;}
+                if(vDonacion.cboxCentro.getSelectedIndex() == 1){auxCC2 = 2;}
+                if(vDonacion.cboxCentro.getSelectedIndex() == 2){auxCC2 = 3;}                
+                
+                //aux1.setCodigoC(Integer.parseInt(vDonacion.cboxCentro.getSelectedItem().toString()));
+                aux1.setCodigoC(auxCC2);
                 mbdDonacion.modificar(Integer.parseInt(vDonacion.txtCodDonacion.getText()), aux1);
                 
                 System.out.println("Modificar Donacion");

@@ -302,11 +302,11 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane1" pref="487" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Component id="btnListarD" min="-2" pref="75" max="-2" attributes="0"/>
+                          <Component id="btnListarD" min="-2" pref="127" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jScrollPane1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -353,7 +353,7 @@
         </Container>
         <Component class="javax.swing.JButton" name="btnListarD">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Listar"/>
+            <Property name="text" type="java.lang.String" value="Listar Donaciones"/>
             <Property name="actionCommand" type="java.lang.String" value="CMD_LISTARD"/>
           </Properties>
           <AuxValues>
