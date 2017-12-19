@@ -28,36 +28,38 @@ public class FrmDonacion extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        labNombre = new javax.swing.JLabel();
-        labSexo = new javax.swing.JLabel();
-        labFechaN = new javax.swing.JLabel();
         btnIngresarD = new javax.swing.JButton();
-        displayFechaN = new javax.swing.JLabel();
-        displayNombre = new javax.swing.JLabel();
         labBuscarRut = new javax.swing.JLabel();
-        displaySexo = new javax.swing.JLabel();
         txtBuscarRut = new javax.swing.JTextField();
         btnModificarD = new javax.swing.JButton();
-        labApellido = new javax.swing.JLabel();
-        labCiudad = new javax.swing.JLabel();
         btnBuscarRut = new javax.swing.JButton();
-        labTipoS = new javax.swing.JLabel();
-        displayCiudad = new javax.swing.JLabel();
-        displayTipoS = new javax.swing.JLabel();
-        displayApellido = new javax.swing.JLabel();
         btnEliminarD = new javax.swing.JButton();
-        cboxTipoDonacion = new javax.swing.JComboBox<>();
-        cboxCentro = new javax.swing.JComboBox<>();
-        labCentro = new javax.swing.JLabel();
-        txtCodPaciente = new javax.swing.JTextField();
-        labTipoD = new javax.swing.JLabel();
-        labCodPaciente = new javax.swing.JLabel();
-        labFechaD = new javax.swing.JLabel();
         btnLimpiar = new javax.swing.JButton();
         btnBuscarCodigoD = new javax.swing.JButton();
-        txtFechaD = new javax.swing.JTextField();
         labCodDonacion = new javax.swing.JLabel();
         txtCodDonacion = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        labNombre = new javax.swing.JLabel();
+        displayCiudad = new javax.swing.JLabel();
+        labApellido = new javax.swing.JLabel();
+        labFechaN = new javax.swing.JLabel();
+        displayApellido = new javax.swing.JLabel();
+        labSexo = new javax.swing.JLabel();
+        displayTipoS = new javax.swing.JLabel();
+        displayFechaN = new javax.swing.JLabel();
+        displaySexo = new javax.swing.JLabel();
+        labTipoS = new javax.swing.JLabel();
+        displayNombre = new javax.swing.JLabel();
+        labCiudad = new javax.swing.JLabel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        labTipoD = new javax.swing.JLabel();
+        cboxCentro = new javax.swing.JComboBox<>();
+        txtCodPaciente = new javax.swing.JTextField();
+        cboxTipoDonacion = new javax.swing.JComboBox<>();
+        txtFechaD = new javax.swing.JTextField();
+        labCentro = new javax.swing.JLabel();
+        labFechaD = new javax.swing.JLabel();
+        labCodPaciente = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setSize(new java.awt.Dimension(555, 555));
@@ -66,13 +68,8 @@ public class FrmDonacion extends javax.swing.JFrame {
         jPanel1.setMaximumSize(new java.awt.Dimension(327, 327));
         jPanel1.setPreferredSize(new java.awt.Dimension(562, 347));
 
-        labNombre.setText("Nombre");
-
-        labSexo.setText("Sexo");
-
-        labFechaN.setText("Fecha Nac.");
-
-        btnIngresarD.setText("Ingresar Donacion");
+        btnIngresarD.setFont(new java.awt.Font("Trebuchet MS", 1, 10)); // NOI18N
+        btnIngresarD.setText("Ingresar Donación");
         btnIngresarD.setActionCommand("CMD_ENTERD");
         btnIngresarD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,21 +77,12 @@ public class FrmDonacion extends javax.swing.JFrame {
             }
         });
 
-        displayFechaN.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
-        displayFechaN.setForeground(new java.awt.Color(0, 0, 153));
-        displayFechaN.setText("-");
-
-        displayNombre.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
-        displayNombre.setForeground(new java.awt.Color(0, 0, 153));
-        displayNombre.setText("-");
-
+        labBuscarRut.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labBuscarRut.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labBuscarRut.setText("Rut");
 
-        displaySexo.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
-        displaySexo.setForeground(new java.awt.Color(0, 0, 153));
-        displaySexo.setText("-");
-
-        btnModificarD.setText("Modificar Donacion");
+        btnModificarD.setFont(new java.awt.Font("Trebuchet MS", 1, 10)); // NOI18N
+        btnModificarD.setText("Modificar Donación");
         btnModificarD.setActionCommand("CMD_MODD");
         btnModificarD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,28 +90,12 @@ public class FrmDonacion extends javax.swing.JFrame {
             }
         });
 
-        labApellido.setText("Apellido");
-
-        labCiudad.setText("Ciudad");
-
+        btnBuscarRut.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
         btnBuscarRut.setText("Buscar");
         btnBuscarRut.setActionCommand("CMD_FINDR");
 
-        labTipoS.setText("Tipo Sangre");
-
-        displayCiudad.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
-        displayCiudad.setForeground(new java.awt.Color(0, 0, 153));
-        displayCiudad.setText("-");
-
-        displayTipoS.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
-        displayTipoS.setForeground(new java.awt.Color(0, 0, 153));
-        displayTipoS.setText("-");
-
-        displayApellido.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
-        displayApellido.setForeground(new java.awt.Color(0, 0, 153));
-        displayApellido.setText("-");
-
-        btnEliminarD.setText("Eliminar Donacion");
+        btnEliminarD.setFont(new java.awt.Font("Trebuchet MS", 1, 10)); // NOI18N
+        btnEliminarD.setText("Eliminar Donación");
         btnEliminarD.setActionCommand("CMD_DELETED");
         btnEliminarD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,30 +103,11 @@ public class FrmDonacion extends javax.swing.JFrame {
             }
         });
 
-        cboxTipoDonacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ALTRUISTA", "REPOSICION" }));
-        cboxTipoDonacion.setSelectedIndex(1);
-        cboxTipoDonacion.setActionCommand("CMD_TDBOX");
-        cboxTipoDonacion.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        cboxTipoDonacion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboxTipoDonacionActionPerformed(evt);
-            }
-        });
-
-        cboxCentro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CONCEPCION", "TALCAHUANO", "CHIGUAYANTE" }));
-        cboxCentro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        labCentro.setText("Centro Donacion");
-
-        labTipoD.setText("Tipo de Donacion");
-
-        labCodPaciente.setText("Codigo Paciente");
-
-        labFechaD.setText("Fecha Donacion");
-
+        btnLimpiar.setFont(new java.awt.Font("Trebuchet MS", 1, 10)); // NOI18N
         btnLimpiar.setText("Limpiar");
         btnLimpiar.setActionCommand("CMD_CLEAR");
 
+        btnBuscarCodigoD.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
         btnBuscarCodigoD.setText("Buscar");
         btnBuscarCodigoD.setActionCommand("CMD_FINDD");
         btnBuscarCodigoD.addActionListener(new java.awt.event.ActionListener() {
@@ -163,7 +116,9 @@ public class FrmDonacion extends javax.swing.JFrame {
             }
         });
 
-        labCodDonacion.setText("Cod. Donacion");
+        labCodDonacion.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labCodDonacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labCodDonacion.setText("Código Donación");
 
         txtCodDonacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,139 +126,263 @@ public class FrmDonacion extends javax.swing.JFrame {
             }
         });
 
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+
+        labNombre.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labNombre.setText("Nombre");
+
+        displayCiudad.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
+        displayCiudad.setForeground(new java.awt.Color(0, 0, 153));
+        displayCiudad.setText("-");
+
+        labApellido.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labApellido.setText("Apellido");
+
+        labFechaN.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labFechaN.setText("Fecha de Nacimiento");
+
+        displayApellido.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
+        displayApellido.setForeground(new java.awt.Color(0, 0, 153));
+        displayApellido.setText("-");
+
+        labSexo.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labSexo.setText("Sexo");
+
+        displayTipoS.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
+        displayTipoS.setForeground(new java.awt.Color(0, 0, 153));
+        displayTipoS.setText("-");
+
+        displayFechaN.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
+        displayFechaN.setForeground(new java.awt.Color(0, 0, 153));
+        displayFechaN.setText("-");
+
+        displaySexo.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
+        displaySexo.setForeground(new java.awt.Color(0, 0, 153));
+        displaySexo.setText("-");
+
+        labTipoS.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labTipoS.setText("Tipo de Sangre");
+
+        displayNombre.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
+        displayNombre.setForeground(new java.awt.Color(0, 0, 153));
+        displayNombre.setText("-");
+
+        labCiudad.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labCiudad.setText("Ciudad");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(labFechaN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(displayFechaN, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(displayCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(displayTipoS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(labTipoS, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(labCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(labNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(displayNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(labApellido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(displayApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(labSexo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(displaySexo, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labApellido)
+                            .addComponent(labNombre))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(displayApellido)
+                            .addComponent(displayNombre)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(labSexo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(displaySexo)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labTipoS)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labCiudad)
+                            .addComponent(labFechaN))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(displayCiudad)
+                            .addComponent(displayFechaN)
+                            .addComponent(displayTipoS))))
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+
+        labTipoD.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labTipoD.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labTipoD.setText("Tipo de Donación");
+
+        cboxCentro.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        cboxCentro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CONCEPCIÓN", "TALCAHUANO", "CHIGUAYANTE" }));
+        cboxCentro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        cboxTipoDonacion.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        cboxTipoDonacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ALTRUISTA", "REPOSICIÓN" }));
+        cboxTipoDonacion.setActionCommand("CMD_TDBOX");
+        cboxTipoDonacion.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        cboxTipoDonacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboxTipoDonacionActionPerformed(evt);
+            }
+        });
+
+        labCentro.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labCentro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labCentro.setText("Centro de Donación");
+
+        labFechaD.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labFechaD.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labFechaD.setText("Fecha de Donación");
+
+        labCodPaciente.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
+        labCodPaciente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labCodPaciente.setText("Código de Paciente");
+
+        jLayeredPane1.setLayer(labTipoD, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(cboxCentro, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(txtCodPaciente, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(cboxTipoDonacion, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(txtFechaD, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(labCentro, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(labFechaD, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(labCodPaciente, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
+        jLayeredPane1.setLayout(jLayeredPane1Layout);
+        jLayeredPane1Layout.setHorizontalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labFechaD, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtFechaD, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labCodPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCodPaciente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(cboxCentro, 0, 104, Short.MAX_VALUE)
+                    .addComponent(labCentro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(40, 40, 40)
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(labTipoD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cboxTipoDonacion, 0, 105, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jLayeredPane1Layout.setVerticalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                        .addComponent(labFechaD)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtFechaD, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCodPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(labCentro)
+                            .addComponent(labTipoD))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cboxCentro, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(labCodPaciente)
+                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(cboxTipoDonacion, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnIngresarD, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnModificarD, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnEliminarD, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10))
+                        .addContainerGap()
+                        .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(labCodDonacion, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtCodDonacion, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(labBuscarRut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtBuscarRut, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(labNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(displayNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(displaySexo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labFechaN, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(displayFechaN, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(34, 34, 34)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(labApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(71, 71, 71))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(labCodDonacion)
-                                                .addGap(18, 18, 18)))
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtFechaD, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(labBuscarRut)
-                                            .addComponent(txtBuscarRut, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtCodDonacion, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(labCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(72, 72, 72)
-                                        .addComponent(labFechaD, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(displayApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(labTipoS, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(displayCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(displayTipoS, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(labCentro, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cboxCentro, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cboxTipoDonacion, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtCodPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labCodPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labTipoD, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBuscarRut, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBuscarCodigoD, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                            .addComponent(btnBuscarCodigoD, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnBuscarRut, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(btnIngresarD, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnModificarD, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnEliminarD, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtCodDonacion, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labCodDonacion))
-                        .addGap(24, 24, 24)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(labBuscarRut)
-                            .addComponent(labApellido)
-                            .addComponent(labNombre))
-                        .addGap(9, 9, 9)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(displayApellido)
-                                    .addComponent(displayNombre)
-                                    .addComponent(txtBuscarRut, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(17, 17, 17)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(labTipoS)
-                                    .addComponent(labSexo)
-                                    .addComponent(labCentro))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(displayTipoS)
-                                    .addComponent(displaySexo)
-                                    .addComponent(cboxCentro, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(113, 113, 113)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(labCiudad)
-                                            .addComponent(labFechaN)
-                                            .addComponent(labFechaD))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(displayCiudad)
-                                            .addComponent(displayFechaN)))
-                                    .addComponent(txtFechaD, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnBuscarCodigoD, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnBuscarRut, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(17, 17, 17)
-                                .addComponent(labTipoD)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(cboxTipoDonacion, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(113, 113, 113)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addComponent(labCodPaciente)
-                                        .addGap(33, 33, 33))
-                                    .addComponent(txtCodPaciente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCodDonacion, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labCodDonacion)
+                    .addComponent(btnBuscarCodigoD, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBuscarRut, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtBuscarRut, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labBuscarRut))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnIngresarD, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnModificarD, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnEliminarD, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26))
+                .addGap(29, 29, 29))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -319,9 +398,11 @@ public class FrmDonacion extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 367, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
+                .addGap(24, 24, 24))
         );
+
+        jPanel1.getAccessibleContext().setAccessibleName("FICHA DE INGRESO DE DONACIÓN");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -401,7 +482,9 @@ public class FrmDonacion extends javax.swing.JFrame {
     public javax.swing.JLabel displayNombre;
     public javax.swing.JLabel displaySexo;
     public javax.swing.JLabel displayTipoS;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel labApellido;
     private javax.swing.JLabel labBuscarRut;
     private javax.swing.JLabel labCentro;
